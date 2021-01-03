@@ -35,7 +35,7 @@ const App = {
       // кнопка вперед или закончить
     },
     setActive(idx) {
-      this.activeIndex = idx
+      if(!this.finish) this.activeIndex = idx
       // когда нажимаем на определенный шаг
     }
   },
